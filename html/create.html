@@ -15,23 +15,27 @@
     <script src="require-config.js"></script>
 </head>
 <body>
-    <section>
-        <div class="logo">
-            <img src="img/m.png" alt="">
+<section>
+    <div class="logo">
+        <img src="img/m.png" alt="">
+    </div>
+    <div class="login">
+        <div class="name clearfix">
+            <img src="img/x.png" alt="">
+            <input data-attach-point="name" type="text" placeholder="Username">
         </div>
-        <div class="login">
-            <div class="name clearfix">
-                <img src="img/x.png" alt="">
-                <input data-attach-point="name" type="text" placeholder="Username">
-            </div>
-            <div class="pwd clearfix">
-                <img src="img/s.png" alt="">
-                <input data-attach-point="pwd" type="password" placeholder="Password">
-            </div>
-            <div class="btn"><button data-attach-point="send">登录</button></div>
-            <p class="forPwd"><a href="create.html">还没帐号?</a></p>
+        <div class="pwd clearfix">
+            <img src="img/s.png" alt="">
+            <input data-attach-point="pwd" type="text" placeholder="Password">
         </div>
-    </section>
+        <div class="phone clearfix">
+            <img src="img/phone.png" alt="">
+            <input data-attach-point="phone" type="text" placeholder="Phone">
+        </div>
+        <div class="btn"><button data-attach-point="send">注册</button></div>
+    </div>
+</section>
+<!--实例对象会触发-->
 
 
 
@@ -41,6 +45,6 @@
 </div>
 </body>
 <script>
-    require(['components/index']);
+    require(['components/create']);
 </script>
 </html>

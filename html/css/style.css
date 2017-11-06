@@ -1,0 +1,77 @@
+html,body{padding:0;margin:0;font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", serif;}
+ul,ol,li,dl,dt,dd,p,h1,h2,h3,h4,h5,h6{padding:0;margin:0;}
+ul,ol,li{list-style:none;}
+h1,h2,h3,h4,h5,h6{font-weight:normal;}
+a,a:hover{text-decoration:none;}
+img{outline:none;}
+/*清除浮动*/
+.clear {clear: both;display: block;overflow: hidden;visibility: hidden;width: 0;height: 0;}
+.clearfix:before, .clearfix:after {content: '.'; display: block; overflow: hidden; visibility: hidden;  font-size: 0;  line-height: 0;  width: 0;  height: 0;}
+.clearfix:after {clear: both;}
+.clearfix {zoom: 1;}
+
+html,body{max-width: 750px;margin: 0 auto;}
+body{background: url("../img/jianbian.jpg");padding:10px;background-size: cover;}
+.logo{text-align: center;padding:120px 0px 50px 0px;}
+.name,.pwd,.phone{text-align: center;    width: 90%;
+    margin: 30px auto;border-bottom: 1px solid #B2BED8;
+    position: relative;
+}
+.name img,.pwd img,.phone img{   float: left; width: 30px;    position: relative;
+    left: -5px;}
+.login input{width: 205px;   height: 25px;border: 0px;
+    background-color: transparent;font-size: 14px;
+    color: #ffffff;
+    float: left;
+    padding-top: 3px;
+    width: 85%;}
+.login input:focus,.login button:focus{
+    outline:none;
+}
+.pwd img{
+    left: -7px;
+}
+.login{margin-top:40px;}
+.btn {
+    text-align: center;
+}
+.login button{
+    width: 90%;
+    border: none;
+    height: 35px;
+    background-color: #02AAC4;
+    color: #ffffff;
+    border-radius: 3px;
+    font-size: 14px;
+}
+.forPwd{
+    text-align: center;
+    margin-top: 25px;
+}
+.forPwd a{
+    color:#5F6980;
+    font-size: 14px;
+}
+.dialog{
+    position: fixed;
+    max-width: 640px;
+    top: 40%;
+    background-color: #ffffff;
+    opacity: 1;
+    color:#000000;
+    z-index:1002;
+    border-radius: 13px;
+    height:80px;
+    width: 50%;
+    left: 25%;
+}
+.diaInfo{
+    font-size: 18px;
+    display: block;
+}
+.diaInfo{
+    width: 100%;
+    text-align: center;
+    font-family: "黑体";
+    line-height: 80px;
+}

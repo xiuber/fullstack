@@ -15,7 +15,8 @@ db.once('open',function(){console.log('Mongo 已经成功连接')});
 /************** 定义模式loginSchema **************/
 const loginSchema = mongoose.Schema({
     account : String,
-    password : String
+    password : Number,
+    phone:Number
 });
 
 /************** 定义模型Model **************/
