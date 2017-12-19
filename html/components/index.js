@@ -29,7 +29,9 @@ define([
                 success:function(data){
                     if(data){
                         $('.diaInfo').text('登录成功');
-                        $(".dialog").show().fadeOut(2000);
+                        $(".dialog").show().fadeOut(2000,function(){
+                            window.location.href='main.html';
+                        });
                     }else{
                         $('.diaInfo').text('帐号或密码错误');
                         $(".dialog").show().fadeOut(2000);

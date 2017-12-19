@@ -29,7 +29,7 @@ router.post('/api/login/createAccount',function(req,res){
                 }
             }
             //TODO:帐号不存在的情况下，把帐号保存进数据库
-            if(create==true) {
+            if(create==true||data=="") {
                 var  newAccount = new models.Login({
                     account : req.body.account,
                     password : req.body.password,

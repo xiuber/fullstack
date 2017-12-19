@@ -26,5 +26,5 @@ app.get('/', function(req, res) {
 })
 
 // 监听6010端口
-app.listen(6010);
-console.log('success listen…6010');
+app.listen(9010);
+console.log('success listen…9010');
